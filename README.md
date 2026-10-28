@@ -106,20 +106,7 @@ bft(graph, 0)
 
 print("\nDFT (Adjacency List):")
 dft(graph, 0)
-```
-
-### Output
-
-```text
-BFT (Adjacency List):
-0 1 2 3
-DFT (Adjacency List):
-0 1 3 2
-```
-
-## Key Concepts
-
-- **BFT:** Uses a queue to visit vertices level by level.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - **DFT:** Uses recursion to explore deeply before backtracking.
 - **Visited Array:** Prevents visiting a vertex more than once.
 - **Adjacency Matrix:** Checks connections using `graph[v][i] == 1`.
