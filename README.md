@@ -1,7 +1,16 @@
+
+# Implement BFT and DFT for a Graph
+
 Implement Breadth First Traversal (BFT) and Depth First Traversal (DFT) using:
+
 1. Adjacency Matrix
 2. Adjacency List
-A) Adjacency Matrix
+
+## A) Adjacency Matrix
+
+### Python Code
+
+```python
 from collections import deque
 
 graph = [
@@ -40,14 +49,24 @@ def dft(graph, start, visited=None):
 print("BFT (Adjacency Matrix):")
 bft(graph, 0)
 
-print("\\nDFT (Adjacency Matrix):")
+print("\nDFT (Adjacency Matrix):")
 dft(graph, 0)
-Output
+```
+
+### Output
+
+```text
 BFT (Adjacency Matrix):
 0 1 2 3
 DFT (Adjacency Matrix):
 0 1 3 2
-B) Adjacency List
+```
+
+## B) Adjacency List
+
+### Python Code
+
+```python
 from collections import deque
 
 graph = {
@@ -85,6 +104,23 @@ def dft(graph, start, visited=None):
 print("BFT (Adjacency List):")
 bft(graph, 0)
 
-print("\\nDFT (Adjacency List):")
+print("\nDFT (Adjacency List):")
 dft(graph, 0)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
+
+### Output
+
+```text
+BFT (Adjacency List):
+0 1 2 3
+DFT (Adjacency List):
+0 1 3 2
+```
+
+## Key Concepts
+
+- **BFT:** Uses a queue to visit vertices level by level.
+- **DFT:** Uses recursion to explore deeply before backtracking.
+- **Visited Array:** Prevents visiting a vertex more than once.
+- **Adjacency Matrix:** Checks connections using `graph[v][i] == 1`.
+- **Adjacency List:** Visits neighbors directly using `graph[v]`.
